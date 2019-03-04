@@ -1,0 +1,12 @@
+
+    <h1>Users</h1>
+
+    <mat-list>
+        <mat-list-item *ngFor="let user of users" (click)="onSelectUser(user)">
+          <h3 matLine> <b>{{user.name}}</b> </h3>
+          <p matLine>
+            <span> {{user.email}} </span>
+            <span> {{user.phone}} </span>
+          </p>
+        </mat-list-item>
+      </mat-list>

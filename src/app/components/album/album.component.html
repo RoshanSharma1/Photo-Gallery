@@ -1,0 +1,9 @@
+<h1>Albums</h1>
+<a  (click)="usersView()">Back</a>
+
+
+<mat-list>
+        <mat-list-item *ngFor="let album of albums" (click)="onSelectAlbum(album)">
+          <h3>{{album.title}}</h3>
+        </mat-list-item>
+</mat-list>

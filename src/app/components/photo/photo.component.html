@@ -1,0 +1,11 @@
+<h1>Photos</h1>
+<a  (click)="albumsView()">Back</a>
+  
+
+<mat-grid-list cols="5" rowHeight="1:1" *ngFor="let photo of photos">
+    <mat-grid-tile> 
+        <a target="_blank" [attr.href]="photo.url">
+        <img [src]="photo.thumbnailUrl">
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
